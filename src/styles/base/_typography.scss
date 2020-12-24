@@ -1,0 +1,62 @@
+@import './mixins'; 
+@import './vars';
+@import "./node_modules/bootstrap/scss/vendor/rfs";
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+  margin-bottom: 1rem;
+  margin-top: 0;
+  font-family: $bold;
+  color: #172b4d;
+}
+
+$font-size-base:              1rem !default;
+
+$rfs-factor: 5; 
+$rfs-minimum-font-size: 0.9rem;
+
+$h1-font-size: $font-size-base * 2.25 !default;
+$h2-font-size: $font-size-base * 2 !default;
+$h3-font-size: $font-size-base * 1.75 !default;
+$h4-font-size: $font-size-base * 1.5 !default;
+$h5-font-size: $font-size-base * 1.25 !default;
+$h6-font-size: $font-size-base * 1 !default;
+
+h1, .h1 { @include font-size($h1-font-size); color: #102027;     font-family: 'proxima_novaextrabold';}
+h2, .h2 { @include font-size($h2-font-size); color: #FDA04B;     font-family: 'proxima_novaextrabold';}
+h3, .h3 { @include font-size($h3-font-size);}
+h4, .h4 { @include font-size($h4-font-size); }
+h5, .h5 { @include font-size($h5-font-size); }
+h6, .h6 { @include font-size($h6-font-size); }
+
+
+p {
+  color: #86939E;
+  font-size: 22px;
+  margin: 0 0 1.3rem 0;
+}
+
+.text-default {
+  font-size: 18px;
+  line-height: 1.35;
+}
+
+.slogan-middle {
+  @include font-size($h1-font-size);
+  color: #102027;
+  letter-spacing: -1px;
+  font-family: 'proxima_novaextrabold';
+}
+
+.splide__arrow {
+  background: url(../svg/sprite.svg#icon-arrow) center / cover no-repeat !important;
+  width: 44px !important;
+  height: 29px !important;
+  svg {
+    display: none;
+  }
+}
+
+.splide__arrow--next {
+  transform: translateY(-50%) scaleX(-1) !important;
+}

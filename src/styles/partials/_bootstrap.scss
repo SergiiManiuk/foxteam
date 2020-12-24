@@ -1,0 +1,63 @@
+@import "node_modules/bootstrap/scss/functions";
+@import "node_modules/bootstrap/scss/variables";
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  md2: 860px,
+  lg: 992px,
+  xl: 1200px
+);
+
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  md2: 820px,
+  lg: 960px, 
+  xl: 1140px
+);
+
+$grid-columns: 24;
+$enable-grid-classes: true;
+$grid-gutter-width: 2rem;
+$enable-responsive-font-sizes: true;
+$rfs-breakpoint: 1500px;
+
+ 
+
+@import "node_modules/bootstrap/scss/vendor/rfs";
+
+
+@import "node_modules/bootstrap/scss/mixins/deprecate";
+
+@import "node_modules/bootstrap/scss/mixins/breakpoints";
+@import "node_modules/bootstrap/scss/mixins/grid-framework";
+@import "node_modules/bootstrap/scss/mixins/grid";
+@import "node_modules/bootstrap/scss/mixins/border-radius";
+@import "node_modules/bootstrap/scss/mixins/gradients";
+@import "node_modules/bootstrap/scss/mixins/lists";
+
+@import "node_modules/bootstrap/scss/mixins/alert";
+@import "node_modules/bootstrap/scss/mixins/text-truncate";
+@import "node_modules/bootstrap/scss/mixins/text-emphasis";
+@import "node_modules/bootstrap/scss/mixins/text-hide";
+@import "node_modules/bootstrap/scss/mixins/table-row";
+@import "node_modules/bootstrap/scss/mixins/hover";
+
+@import "node_modules/bootstrap/scss/grid";
+// @import "node_modules/bootstrap/scss/tables";
+// @import "node_modules/bootstrap/scss/alert";
+// @import "node_modules/bootstrap/scss/utilities/position";
+// @import "node_modules/bootstrap/scss/utilities/embed";
+// @import "node_modules/bootstrap/scss/utilities/borders";
+@import "node_modules/bootstrap/scss/utilities/display";
+@import "node_modules/bootstrap/scss/utilities/flex";
+
+@import "node_modules/bootstrap/scss/utilities/align";
+@import "node_modules/bootstrap/scss/utilities/text";
+@import "node_modules/bootstrap/scss/utilities/spacing";
+@import "node_modules/bootstrap/scss/utilities/sizing";
+
+.container {
+  padding: 0;
+}

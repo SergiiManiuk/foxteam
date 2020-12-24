@@ -1,0 +1,293 @@
+@mixin fluid-type($min-vw, $max-vw, $min-value, $max-value) {
+  $factor: 1 / ($max-vw - $min-vw) * ($max-value - $min-value);
+  $calc-value: unquote("#{ $min-value - ($min-vw * $factor) } + #{ 100vw * $factor }");
+
+  font-size: $min-value; // Fallback for older browsers
+  font-size: clamp(#{ if($min-value > $max-value, $max-value, $min-value) }, #{ $calc-value }, #{ if($min-value > $max-value, $min-value, $max-value) });
+}
+// @include fluid-type(48rem, 94rem, 1.15rem, 1.5rem);
+// 768 -> 1504
+$breakpoints: (
+  _360: 360px,
+  _375: 375px,
+  _576: 576px,
+  _640: 640px,
+  _700: 700px,
+  _740: 740px,
+  _768: 768px, //48.000em
+  _769: 769px, //48.063em
+  _860: 860px,
+  _920: 920px,
+  _992: 992px,
+  _1100: 1100px,
+  _1200: 1200px,
+  _1279: 1279px,
+  _1300: 1300px,
+  _1360: 1360px,
+  _1400: 1400px,
+  _1450: 1450px,
+  _1500: 1500px, //94em
+  _1600: 1600px
+);
+ 
+@mixin breakpoint($breakpoint, $direction) {
+  @if map-has-key($breakpoints, $breakpoint) {
+
+    // Get the breakpoint value.
+    $breakpoint-value: map-get($breakpoints, $breakpoint);
+    
+    @if $direction == max {
+      @media (max-width: ($breakpoint-value - 1)) {
+        @content;
+      }
+    } @else if $direction == min {      
+      @media (min-width: $breakpoint-value) {
+        @content;
+      }
+    } @else {
+      @media ($direction: $breakpoint-value) {
+        @content
+      }
+    }
+   // If the breakpoint doesnt exist in the map.
+  } @else { 
+    @if $direction == max {
+      @media (max-width: $breakpoint) {
+        @content;
+      }
+    } @else if $direction == min {      
+      @media (min-width: $breakpoint) {
+        @content;
+      }
+    } @else {
+      @media ($direction: $breakpoint) {
+        @content
+      }
+    }
+  }
+}
+
+
+$header_breakpoint_value_min: "1280px"; 
+$header_breakpoint_value_max: "1279px"; 
+@mixin header_breakpoint($breakpoint: min ) {
+    @if $breakpoint == max {
+        @media (max-width: ($header_breakpoint_value_max)) {
+            @content;
+        }
+    } @else {
+      @media (min-width: ($header_breakpoint_value_min)) {
+        @content;
+      } 
+    }
+}
+
+
+@mixin breakpoint-height($breakpoint, $direction) {
+  @if map-has-key($breakpoints, $breakpoint) {
+
+    // Get the breakpoint value.
+    $breakpoint-value: map-get($breakpoints, $breakpoint);
+    
+    @if $direction == max {
+      @media (max-height: ($breakpoint-value - 1)) {
+        @content;
+      }
+    } @else if $direction == min {      
+      @media (min-height: $breakpoint-value) {
+        @content;
+      }
+    } @else {
+      @media ($direction: $breakpoint-value) {
+        @content
+      }
+    }
+   // If the breakpoint doesnt exist in the map.
+  } @else { 
+    @if $direction == max {
+      @media (max-height: $breakpoint) {
+        @content;
+      }
+    } @else if $direction == min {      
+      @media (min-height: $breakpoint) {
+        @content;
+      }
+    } @else {
+      @media ($direction: $breakpoint) {
+        @content
+      }
+    }
+  }
+}
+
+
+ 
+// @include breakpoint(phone, min) {
+//     @include breakpoint(laptop, max) {
+//          display: none;
+//      }
+//  }
+// @media (min-width: 768px) and (max-width: 1239px) {s
+
+ 
+$_560: "560px";
+@mixin _560_max {
+   @media (max-width: #{$_560}) {
+       @content;
+   }
+}
+@mixin _560_min {
+   @media (min-width: #{$_560}) {
+       @content;
+   }
+}
+
+/*740px*/
+$_740_min: "740px";
+$_740_max: "739px";
+@mixin _740_min {
+    @media (min-width: #{$_740_min}) {
+        @content;
+    }
+}
+@mixin _740_max {
+    @media (max-width: #{$_740_max}) {
+        @content;
+    }
+}
+
+
+/*769px*/
+$_769: '769px';
+$_768: '768px';
+@mixin _769_min {
+   @media (min-width: #{$_769}) {
+       @content;
+   }
+}
+@mixin _769_max {
+   @media (max-width: #{$_768}) {
+       @content;
+   }
+}
+
+
+/*860px*/
+$_860: "860px";
+@mixin _860_max {
+   @media (max-width: #{$_860}) {
+       @content;
+   }
+}
+
+
+/*920px*/
+$_920: "920px";
+@mixin _920_max {
+   @media (max-width: #{$_920}) {
+       @content;
+   }
+}
+@mixin _920_min {
+    @media (min-width: #{$_920}) {
+        @content;
+    }
+}
+
+
+/*1100*/
+$_1000: '1000px';
+
+@mixin _1000_min {
+    @media (min-width: #{$_1000}) {
+        @content;
+    }
+}
+
+@mixin _1000_max {
+    @media (max-width: #{$_1000}) {
+        @content;
+    }
+}
+
+
+/*1100*/
+$_1100: '1100px';
+@mixin _1100_min {
+   @media (min-width: #{$_1100}) {
+       @content;
+   }
+}
+@mixin _1100_max {
+   @media (max-width: #{$_1100}) {
+       @content;
+   }
+}
+
+
+/*1200px*/
+$_1200: '1200px'; 
+@mixin _1200_min {
+   @media (min-width: #{$_1200}) {
+       @content;
+   }
+}
+@mixin _1200_max {
+   @media (max-width: #{$_1200}) {
+       @content;
+   }
+}
+
+
+/*1360px*/
+$_1360: "1360px";
+@mixin _1360_max {
+   @media (max-width: #{$_1360}) {
+       @content;
+   }
+}
+
+@mixin desktop_1360_min {
+   @media (min-width: #{$_1360}) {
+       @content;
+   }
+}
+
+
+
+/*1400px*/
+$_1400: "1400px";
+
+@mixin _1400_min {
+    @media (min-width: #{$_1400}) {
+        @content;
+    }
+}
+
+@mixin _1400_max {
+    @media (max-width: #{$_1400}) {
+        @content;
+    }
+}
+/*1450px*/
+$_1450: "1450px";
+@mixin _1450_max {
+   @media (max-width: #{$_1450}) {
+       @content;
+   }
+}
+
+
+
+/*1500px*/
+$_1500: "1500px";
+@mixin _1500_max {
+   @media (max-width: #{$_1500}) {
+       @content;
+   }
+}
+@mixin _1500_min {
+   @media (min-width: #{$_1500}) {
+       @content;
+   }
+}

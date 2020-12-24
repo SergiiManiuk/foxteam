@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <title>foxteam</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, maximum-scale=1">
+   
+    <link href="./dist/css/index.css" rel="stylesheet">
+    <link rel="stylesheet" href="node_modules/@splidejs/splide/dist/css/splide.min.css">
+    <!-- <link rel="stylesheet" href="node_modules/@splidejs/splide/dist/css/themes/splide-sea-green.min.css"> -->
+    <script src="node_modules/@splidejs/splide/dist/js/splide.min.js"></script>
+    
+</head>
+<body>
+
+    <header class="header">
+        <div class="header__wrapper">
+            <div class="header__menu stellarnav">
+                <!-- <a href="#" class="menu-toggle"><span></span></a>  <= future stellar nav menu--> 
+
+                <a href="javascript:void(0);" class="ic menu" tabindex="1">
+                    <span></span>
+                </a>
+                <a href="javascript:void(0);" class="ic close">
+                    <span></span>
+                </a>
+
+                <div class="navMainWrap">
+                    <ul id="navMain" class="nav-main">
+                        <li>
+                            <a href="/">Наши заказчики</a>
+                        </li>
+                        <li>
+                            <a href="/about/who_we_are.html">Чем занимаемся</a>
+                            
+                        </li>
+                        <li>
+                            <a href="/news/news.html">Отзывы клиентов</a>
+                            
+                        </li>
+
+                        <li class="logo">
+                            <a href="/">
+                                <img src="./src/img/logo.svg" alt="">
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="/career/advantage.html">Портфель проектов</a>
+                            
+                        </li>
+                        <li>
+                            <a href="/csr/responsibility.html">Новости</a>
+                            
+                        </li>
+                        <li>
+                            <a href="#">Контакты</a>
+                        </li>
+                    </ul>   
+                </div>
+
+            </div>
+            <div class="header__lang">
+                <a href="/">
+                    Русский
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main>        
+         <section class="services">
+                <h1 class="slogan-middle text-center">Professional IT services</h1>
+                <p class="index-slogan">Мы реализуем технически сложные ИТ-инфраструктурные проекты для своих заказчиков</p>
+                <div class="poster">                   
+                        <div class="d-flex justify-content-center">
+                            <div class="poster-slogans">
+                                <div class=" poster-item">
+                                    <div class="poster-item__text">
+                                        <div class="poster-item__slogan">Наши заказчики</div>
+                                        <div class="poster-item__desc">Фокстрот, Секунда, Doc.ua</div>
+                                    </div>
+                                    <div class="poster-item__img">
+                                        <img src="/src/img/svg/icon-customers.svg" alt="">
+                                    </div>
+                                </div>
+                                <div class="poster-item poster-item__middle">
+                                    <div class="poster-item__text">
+                                        <div class="poster-item__slogan">Кто мы</div>
+                                        <div class="poster-item__desc">чем занимаемся</div>
+                                    </div>
+                                    <div class="poster-item__img">
+                                        <img src="/src/img/svg/icon-who-we-are.svg" alt="">
+                                    </div>
+                                </div>
+                                <div class="poster-item">
+                                    <div class="poster-item__text">
+                                        <div class="poster-item__slogan">Отзывы клиентов</div>
+                                        <div class="poster-item__desc">Фокстрот, Секунда, Doc.ua</div>
+                                    </div>
+                                    <div class="poster-item__img">
+                                        <img src="/src/img/svg/icon-testimonials.svg" alt="">
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                            <div class="d-flex flex-column poster-picture">
+                                <img src="./src/img/index_poster_bg.png" alt="">
+                            </div>
+                            <div class="poster-slogans">
+                                    <div class="poster-item poster-item-right">
+                                        <div class="poster-item__img">
+                                            <img src="/src/img/svg/icon-projects.svg" alt="">
+                                        </div>
+                                        <div class="poster-item__text">
+                                            <div class="poster-item__slogan">Портфель проектов</div>
+                                            <div class="poster-item__desc">Фокстрот, Секунда, Doc.ua</div>
+                                        </div>
+                                    </div>
+                                    <div class="poster-item poster-item-right poster-item__middle">
+                                        <div class="poster-item__img">
+                                            <img src="/src/img/svg/icon-news.svg" alt="">
+                                        </div>
+                                        <div class="poster-item__text">
+                                            <div class="poster-item__slogan">Новости</div>
+                                            <div class="poster-item__desc">последние события</div>
+                                        </div>
+                                    </div>
+                                    <div class="poster-item poster-item-right">
+                                        <div class="poster-item__img">
+                                            <img src="/src/img/svg/icon-contacts.svg" alt="">
+                                        </div>
+                                        <div class="poster-item__text">
+                                            <div class="poster-item__slogan">Контакты</div>
+                                            <div class="poster-item__desc">Фокстрот, Секунда, Doc.ua</div>
+                                        </div>                                       
+                                    </div>
+                            </div>
+                        </div>                   
+                </div>
+        </section>
+
+
+        <section class="container container-customers">
+            <h2 class="slogan-head">
+                Наши заказчики
+            </h2>
+                <div id="customers" class="splide customers">
+                        <div class="splide__track">
+                            <ul class="splide__list">
+                                <li class="splide__slide">
+                                    <img src="./src/img/customer-foxtrot-group.png" alt="">
+                                </li>
+                                <li class="splide__slide">
+                                    <img src="./src/img/customer-secunda.png" alt="">
+                                </li>
+                                <li class="splide__slide">
+                                    <img src="./src/img/customer-foxtrot.png" alt="">
+                                </li>
+                                <li class="splide__slide">
+                                    <img src="./src/img/customer-doc-ua.png" alt="">
+                                </li>
+                                <li class="splide__slide">
+                                    <img src="./src/img/customer-secunda.png" alt="">
+                                </li> 
+                            </ul>
+                        </div>
+                    </div>
+        </section>
+        <script>
+            document.addEventListener( 'DOMContentLoaded', function () {          
+                new Splide( '#customers', {
+                    type     : 'loop',
+                    // autoWidth: true,
+                    rewind: false,
+                    perPage: 4,
+                    pagination: false,
+                    breakpoints: {
+                        1000: {
+                            perPage: 3
+                        },
+                    }
+                } ).mount();
+            } );
+        </script>
+
+        <section class="doing">
+            <div class="container">
+                <div class="row row-doing-1">
+                    <div class="col-lg-12">
+                        <h2 class="slogan-head">Чем занимаемся</h2>
+                        <p class="slogan-description">FoxTeam зарекомендовала себя как опытный ИТ-интегратор, надежный партнер и поставщик.</p>
+                        <p class="slogan-content">Предоставляя качественные услуги и решения мы способствуем развитию и укреплению украинской экономики, государства в целом. Быть лучше, чем вчера и развивать бизнес наших заказчиков — таков наш подход к работе.
+                            </p>
+                    </div>
+                    <div class="col-lg-12 text-lg-right">
+                        <img src="/src/img/work.svg" alt="">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12 order-1 order-lg-0">
+                        <img src="/src/img/work-logo.svg" alt="">
+                    </div>
+                    <div class="col-lg-12 order-0 order-lg-1">
+                            <p class="slogan-content slogan-content-doing-logo">
+                                Предоставляя качественные услуги и решения мы способствуем развитию и укреплению украинской экономики, государства в целом. Быть лучше, чем вчера и развивать бизнес наших заказчиков — таков наш подход к работе.
+                            </p>
+                            <img src="/src/img/logo-corez.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="container container-testimonials">
+            <h2 class="slogan-head">
+                    Отзывы клиентов
+            </h2>
+            <div id="testimonials" class="splide testimonials">
+                <div class="splide__track">
+                    <ul class="splide__list">
+                    <li class="splide__slide">
+                        <div class="testimonial">
+                            <div class="testimonial__inner">
+                                <img src="./src/img/customer-testimonial.png" alt="" class="testimonial__customer-avatar">
+                                <p class="testimonial__content">
+                                    We did not believe something so simple could make our complicated proprietary time attendance and team management systems redundant. And yet it did! Thanks stayhome.ai team!
+                                </p>
+                                <div class="testimonial-customer">
+                                    <p class="testimonial-customer__name">John Doe </p>
+                                    <p class="testimonial-customer__company">Company Name</p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="splide__slide">
+                            <div class="testimonial">
+                                <div class="testimonial__inner">
+                                    <img src="./src/img/customer-testimonial.png" alt="" class="testimonial__customer-avatar">
+                                    <p class="testimonial__content">
+                                        We did not believe something so simple could make our complicated proprietary time attendance and team management systems redundant. And yet it did! Thanks stayhome.ai team!
+                                    </p>
+                                    <div class="testimonial-customer">
+                                        <p class="testimonial-customer__name">John Doe </p>
+                                        <p class="testimonial-customer__company">Company Name</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+        
+                        <li class="splide__slide">
+                            <div class="testimonial">
+                                <div class="testimonial__inner">
+                                    <img src="./src/img/customer-testimonial.png" alt="" class="testimonial__customer-avatar">
+                                    <p class="testimonial__content">
+                                        We did not believe something so simple could make our complicated proprietary time attendance and team management systems redundant. And yet it did! Thanks stayhome.ai team!
+                                    </p>
+                                    <div class="testimonial-customer">
+                                        <p class="testimonial-customer__name">John Doe </p>
+                                        <p class="testimonial-customer__company">Company Name</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="splide__slide">
+                                <div class="testimonial">
+                                    <div class="testimonial__inner">
+                                        <img src="./src/img/customer-testimonial.png" alt="" class="testimonial__customer-avatar">
+                                        <p class="testimonial__content">
+                                            We did not believe something so simple could make our complicated proprietary time attendance and team management systems redundant. And yet it did! Thanks stayhome.ai team!
+                                        </p>
+                                        <div class="testimonial-customer">
+                                            <p class="testimonial-customer__name">John Doe </p>
+                                            <p class="testimonial-customer__company">Company Name</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+            
+                            <li class="splide__slide">
+                                <div class="testimonial">
+                                    <div class="testimonial__inner">
+                                        <img src="./src/img/customer-testimonial.png" alt="" class="testimonial__customer-avatar">
+                                        <p class="testimonial__content">
+                                            We did not believe something so simple could make our complicated proprietary time attendance and team management systems redundant. And yet it did! Thanks stayhome.ai team!
+                                        </p>
+                                        <div class="testimonial-customer">
+                                            <p class="testimonial-customer__name">John Doe </p>
+                                            <p class="testimonial-customer__company">Company Name</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </section>         
+    
+        <script>
+            document.addEventListener( 'DOMContentLoaded', function () {          
+                new Splide( '#testimonials', {
+                    type     : 'loop',
+                    autoWidth: true
+                } ).mount();
+            } );
+        </script>
+
+        <section class="container container-projects p-0">
+           
+            <h2 class="slogan-head">
+               
+                Портфель проектов
+            </h2>
+      
+            <div class="d-flex project">
+                <div class="col-lg-12">
+                    <img src="./src/img/project-pic.png" alt="">
+                </div>
+                <div class="col-lg-12 project-description">
+                    <p class="project-name slogan-middle">
+                        ServiceDesk bot
+                    </p>
+                    <p class="project-content text-default">
+                        Проект включает в себя реализацию мобильной версии внутреннего портала для подачи возникающих проблем сотрудников в работе.
+                         Реализован в популярных мессенджерах Viber и Telegram. В него включены возможности просмотра своих заявок, подачи новых заявок, закрытия выполненных.
+                    </p>
+                </div>
+            </div>
+      
+            <div class="d-flex project">
+                <div class="col-lg-12">
+                    <img src="./src/img/project-pic.png" alt="">
+                </div>
+                <div class="col-lg-12 project-description">
+                    <p class="project-name slogan-middle">
+                        ServiceDesk bot
+                    </p>
+                    <p class="project-content text-default">
+                        Проект включает в себя реализацию мобильной версии внутреннего портала для подачи возникающих проблем сотрудников в работе.
+                         Реализован в популярных мессенджерах Viber и Telegram. В него включены возможности просмотра своих заявок, подачи новых заявок, закрытия выполненных.
+                    </p>
+                </div>
+            </div>
+      
+            <div class="d-flex project">
+                <div class="col-lg-12">
+                    <img src="./src/img/project-pic.png" alt="">
+                </div>
+                <div class="col-lg-12 project-description">
+                    <p class="project-name slogan-middle">
+                        ServiceDesk bot
+                    </p>
+                    <p class="project-content text-default">
+                        Проект включает в себя реализацию мобильной версии внутреннего портала для подачи возникающих проблем сотрудников в работе.
+                         Реализован в популярных мессенджерах Viber и Telegram. В него включены возможности просмотра своих заявок, подачи новых заявок, закрытия выполненных.
+                    </p>
+                </div>
+            </div>
+      
+            <div class="d-flex project">
+                <div class="col-lg-12">
+                    <img src="./src/img/project-pic.png" alt="">
+                </div>
+                <div class="col-lg-12 project-description">
+                    <p class="project-name slogan-middle">
+                        ServiceDesk bot
+                    </p>
+                    <p class="project-content text-default">
+                        Проект включает в себя реализацию мобильной версии внутреннего портала для подачи возникающих проблем сотрудников в работе.
+                         Реализован в популярных мессенджерах Viber и Telegram. В него включены возможности просмотра своих заявок, подачи новых заявок, закрытия выполненных.
+                    </p>
+                </div>
+            </div>
+      
+            <div class="d-flex project">
+                <div class="col-lg-12">
+                    <img src="./src/img/project-pic.png" alt="">
+                </div>
+                <div class="col-lg-12 project-description">
+                    <p class="project-name slogan-middle">
+                        ServiceDesk bot
+                    </p>
+                    <p class="project-content text-default">
+                        Проект включает в себя реализацию мобильной версии внутреннего портала для подачи возникающих проблем сотрудников в работе.
+                         Реализован в популярных мессенджерах Viber и Telegram. В него включены возможности просмотра своих заявок, подачи новых заявок, закрытия выполненных.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+
+
+
+    </main>
+
+
+
+
+<a href="/" class="btn-top">
+    Наверх
+</a>
+
+</body>
+</html>
