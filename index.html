@@ -6,9 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, maximum-scale=1">
    
     <link href="./dist/css/index.css" rel="stylesheet">
-    <link rel="stylesheet" href="node_modules/@splidejs/splide/dist/css/splide.min.css">
-    <!-- <link rel="stylesheet" href="node_modules/@splidejs/splide/dist/css/themes/splide-sea-green.min.css"> -->
-    <script src="node_modules/@splidejs/splide/dist/js/splide.min.js"></script>
+    <script src="./dist/js/app.js"></script>
     
 </head>
 <body>
@@ -167,23 +165,6 @@
                         </div>
                     </div>
         </section>
-        <script>
-            document.addEventListener( 'DOMContentLoaded', function () {          
-                new Splide( '#customers', {
-                    type     : 'loop',
-                    // autoWidth: true,
-                    rewind: false,
-                    perPage: 4,
-                    pagination: false,
-                    breakpoints: {
-                        1000: {
-                            perPage: 3
-                        },
-                    }
-                } ).mount();
-            } );
-        </script>
-
         <section class="doing">
             <div class="container">
                 <div class="row row-doing-1">
@@ -295,15 +276,6 @@
             </div>
         </section>         
     
-        <script>
-            document.addEventListener( 'DOMContentLoaded', function () {          
-                new Splide( '#testimonials', {
-                    type     : 'loop',
-                    autoWidth: true
-                } ).mount();
-            } );
-        </script>
-
         <section class="container container-projects p-0">
            
             <h2 class="slogan-head">

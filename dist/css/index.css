@@ -1,3 +1,4 @@
+@import url(../../node_modules/@splidejs/splide/dist/css/splide.min.css);
 @font-face {
   font-family: 'proxima_novalight';
   src: url("../../../src/fonts/proximanova-light-webfont.woff2") format("woff2"), url("../../../src/fonts/proximanova-light-webfont.woff") format("woff");
