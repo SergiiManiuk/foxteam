@@ -81,10 +81,17 @@
   //100 - padding-height - header height
 }
 
+.container-projects-bg {
+    background-image: url("./src/img/bg-projects-container.svg");
+    background-repeat: no-repeat;
+    background-position: right top;   
+}
+
+
 .container-projects {
-    padding: 0;
+    padding: 90px 0 0 0 !important;
     .slogan-head {
-        margin-bottom: 100px;
+        margin-bottom: 85px;
     }
 }
 
@@ -117,17 +124,18 @@
 }
 
 .poster-picture {
-  padding: 0 10px;
+//   padding: 0 10px;
+    width: 483px;
 }
 
 .index-slogan {
-  margin-bottom: 60px;
+  margin-bottom: 70px;
 }
 
-.poster-slogans {
-  display: flex;
-  flex-direction: column;
-  padding: 65px 0 0 0;
+
+
+.poster-slogans-right {
+
 }
 
 .poster-item {
@@ -144,18 +152,56 @@
     color: #86939E;
   }
   &__middle {
-    margin: 80px 0 95px;
+    margin: 80px 0 90px 30px;
   }
   &__img {
-    margin: 0 0 0 15px;
+    margin: 0 0 0 25px;
   }
   &.poster-item-right {
     text-align: left;
+    // padding-left: 70px;
     .poster-item__img {
-      margin: 0 15px 0 0;
+      margin: 0 23px 0 0;
     }
   }
+} 
+
+
+.poster-item-right-inner {
+    display: flex;
+    align-items: center;
+    padding-left: 40px;
 }
+
+
+.poster-slogans {
+    display: flex;
+    flex-direction: column;
+    padding: 65px 0 0 0;
+  }
+  
+  .poster-slogans-right {
+      
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .splide__arrow--prev {
     left: -3em !important;
@@ -183,10 +229,10 @@
 
 .container-testimonials {
     box-sizing: content-box;
-    margin-bottom: 230px;
+    margin-bottom: 180px;
     padding-top: 80px;
     .splide__pagination {
-        bottom: -100px;
+        bottom: -130px;
     }
 
 }
@@ -208,7 +254,7 @@ main {
 
 
 .testimonials {
-    margin-top: 70px;
+    margin-top: 90px;
     margin-left: -20px;
     &::after {
         content: '';
@@ -233,7 +279,8 @@ main {
         box-shadow: 0px 0px 11px 1px rgba(0, 0, 0, 0.1);
         border-radius: 10px;
         position: relative;
-        padding: 30px 20px 30px 50px;
+        padding: 30px 20px 10px 50px;
+        height: 100%;
         &::before {
             content: '';
             display: block;
@@ -250,9 +297,15 @@ main {
     &__customer-avatar {
         border-radius: 50%;
     }
+    &__customer-logo {
+        float: right;
+        width: 93px;
+        margin-top: -10px;
+    }
     &__content {
         font-size: 18px;
         line-height: 1.3;
+        margin: 20px 0 30px;
     }
 }
 
@@ -260,10 +313,13 @@ main {
     &__name {
         font-size: 18px;
         font-family: 'proxima_novasemibold';
+        color: #1A243A;
+        margin: 0 0 5px 0;
     }
     &__company {
         font-size: 16px;
     }
+    
 }
 
 

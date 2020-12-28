@@ -44,7 +44,7 @@ p {
 .slogan-middle {
   @include font-size($h1-font-size);
   color: #102027;
-  letter-spacing: -1px;
+  letter-spacing: -1.1px;
   font-family: 'proxima_novaextrabold';
 }
 
