@@ -1,1 +1,1 @@
-Init
+https://sergiimaniuk.github.io/foxteam/
