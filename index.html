@@ -13,16 +13,13 @@
 
     <header class="header">
         <div class="header__wrapper">
-            <div class="header__menu stellarnav">
-                <!-- <a href="#" class="menu-toggle"><span></span></a>  <= future stellar nav menu--> 
-
+            <div class="header__menu fox-menu">
                 <a href="javascript:void(0);" class="ic menu" tabindex="1">
                     <span></span>
                 </a>
                 <a href="javascript:void(0);" class="ic close">
                     <span></span>
                 </a>
-
                 <div class="navMainWrap">
                     <ul id="navMain" class="nav-main">
                         <li>
@@ -39,7 +36,8 @@
 
                         <li class="logo">
                             <a href="/">
-                                <img src="./src/img/logo.svg" alt="">
+                                <img src="./src/img/logo.svg" alt="" class="logo-desktop">
+                                <img src="./src/img/logo-mobile.svg" alt="" class="logo-mob" style="display: none;">
                             </a>
                         </li>
 
@@ -66,8 +64,11 @@
         </div>
     </header>
 
-    <main>        
-         <section class="services">
+    <main>
+         <section class="services">             
+            <div class="header-logo-mobile">
+                    <img src="./src/img/logo.svg" alt="">
+                </div>
                 <h1 class="slogan-middle text-center">Professional IT services</h1>
                 <p class="index-slogan">Мы реализуем технически сложные ИТ-инфраструктурные проекты для своих заказчиков</p>
                 <div class="poster">                   
