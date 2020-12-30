@@ -1023,6 +1023,55 @@ footer {
       .contacts li a.footer-mail::before {
         background-image: url(../svg/sprite.svg#icon-mail); }
 
+/*740px*/
+/*769px*/
+/*860px*/
+/*920px*/
+/*1100*/
+/*1100*/
+/*1200px*/
+/*1360px*/
+/*1400px*/
+/*1450px*/
+/*1500px*/
+.news {
+  background: #FFFFFF;
+  border: 1px solid #E7EBF9;
+  border-radius: 5px;
+  display: flex;
+  margin: 0 0 10px 0; }
+  .news__image img {
+    max-width: none; }
+  .news__description {
+    padding: 0 0 0 90px; }
+    .news__description_info {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin: 0 0 10px 0; }
+    .news__description_slogan {
+      font-size: 36px;
+      letter-spacing: -1px;
+      font-family: 'proxima_novaextrabold';
+      color: #1A243A;
+      line-height: 1.35;
+      margin: 0 0 15px 0; }
+    .news__description_content {
+      color: #86939E;
+      line-height: 1.35;
+      font-size: 18px;
+      padding: 0 60px 0 0; }
+  .news__date {
+    font-size: 1rem;
+    color: #86939E;
+    padding: 20px 0 0 0; }
+  .news__social {
+    position: relative;
+    top: 5px;
+    margin: 0 8px 0 0; }
+    .news__social img {
+      height: 35px; }
+
 .container,
 .container-fluid,
 .container-sm,
